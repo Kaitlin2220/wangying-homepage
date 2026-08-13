@@ -30,6 +30,6 @@ python -m http.server 8080
 
 ## 在线地址
 
-[https://kaitlin2220.github.io/Kaitlin---homepage/](https://kaitlin2220.github.io/Kaitlin---homepage/)
+[https://kaitlin2220.github.io/wangying-homepage/](https://kaitlin2220.github.io/wangying-homepage/)
 
 网站通过 GitHub Pages 从 `main` 分支根目录自动发布。
