@@ -28,8 +28,8 @@ python -m http.server 8080
 - 主色、字体与布局：编辑 `styles.css`
 - 真人照片：替换 `assets/kaitlin-portrait.jpg`，或修改 `hero.portrait.image`
 
-## 部署到 GitHub Pages
+## 在线地址
 
-可创建名为 `Kaitlin2220.github.io` 的公开仓库，把本目录内文件推送到仓库根目录。在仓库 **Settings → Pages** 中选择 **Deploy from a branch**，再选择 `main` 分支和 `/ (root)`。
+[https://kaitlin2220.github.io/Kaitlin---homepage/](https://kaitlin2220.github.io/Kaitlin---homepage/)
 
-发布地址将是 `https://Kaitlin2220.github.io`。
+网站通过 GitHub Pages 从 `main` 分支根目录自动发布。
