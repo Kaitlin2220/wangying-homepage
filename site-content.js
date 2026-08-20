@@ -69,7 +69,7 @@ window.SITE_CONTENT = {
     location: "广州",
     status: "Open to opportunities · 2027 届",
     highlights: [
-      { value: "80%", label: "AI 质检录入效率提升，并推广至团队使用" },
+      { value: "20%", label: "AI 质检录入效率提升，并推广至团队使用" },
       { value: "4个", label: "小小的AIcoding产品" },
       { value: "4 / 63", label: "硕士 GPA 排名，专业前 10%" },
       { value: "2 次", label: "校级优秀学生一等奖学金" },
@@ -112,7 +112,7 @@ window.SITE_CONTENT = {
           },
           {
             title: "AI 质检提效",
-            text: "搭建 AI 辅助质检工具，自动处理正常工单评分与标签填写；填写效率提升约 80%，由 3 位同事持续使用 2 周。",
+            text: "使用Codex与飞书CLI搭建 AI 辅助质检工具，自动处理正常工单评分与标签填写；填写效率提升约 20%，由 3 位同事持续使用 2 周。",
           },
         ],
       },
@@ -122,7 +122,7 @@ window.SITE_CONTENT = {
         period: "2026.03 — 2026.06",
         location: "广州",
         bullets: [
-          "系统需求与项目推进：参与 Global App 海外 Local Offer 频道建设，覆盖需求评审、PRD 撰写、Figma 原型审查、功能验收、上线反馈及迭代跟进",
+          "系统需求与项目推进：参与海外本地生活频道建设，覆盖需求评审、PRD 撰写、Figma 原型审查、功能验收、上线反馈及迭代跟进",
           "流程与标准建设：梳理酒店预订、核销及异常处理等 20+ 类高频问题，完成分类归档和标准化应答 SOP；使用 Dify 搭建知识库问答 demo",
           "跨团队协同：负责 5 家海外供应商需求与问题协调，使用英文邮件联动产品、运营及技术团队；用影刀 RPA 自动化约 1/3 重复录入流程，每周节省人工 3 小时以上"
 
