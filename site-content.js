@@ -8,8 +8,8 @@
 window.SITE_CONTENT = {
   meta: {
     language: "zh-CN",
-    title: "Kaitlin · 个人网站",
-    description: "Kaitlin 的过往经历，记录点滴成长",
+    title: "王莹 Kaitlin · 运营与 AI 实践",
+    description: "王莹 Kaitlin 的个人主页：服务运营、品类运营、数据分析与 AI 工具落地实践。",
     themeColor: "#f7f1e7",
   },
 
@@ -33,20 +33,20 @@ window.SITE_CONTENT = {
 
   hero: {
     availability: "Open to opportunities · 2026",
-    titleBefore: "AI时代",
-    titleHighlight: "VibeCoding",
-    titleAfter: "选手",
+    titleBefore: "看懂真实问题",
+    titleHighlight: "让数据与 AI",
+    titleAfter: "真正落地",
     introLine1: "嗨，我是王莹 Kaitlin。",
-    introLine2: "善于用数据理解问题、借助 AI 提升效率，并推动想法落地的经济学硕士生。",
+    introLine2: "具备服务运营、品类运营与 AI 工具落地经验，习惯从用户反馈和业务数据中定位问题、推进协同与改进。",
     primaryButton: { label: "了解我", href: "#profile" },
     secondaryButton: { label: "GitHub", href: "https://github.com/Kaitlin2220" },
-    skills: ["产品运营", "服务运营", "AI 产品实践"],
+    skills: ["服务与品类运营", "数据分析", "AI 提效实践"],
     portrait: {
       // 填入图片路径即可替换插画，例如 assets/avatar.jpg；留空则保留插画。
       image: "assets/kaitlin-portrait.jpg",
       imageAlt: "Kaitlin 在绿色山坡前的户外照片",
       placeholderLabel: "替换为你的真人照片",
-      captionLeft: "Kaitlin / Product & Data",
+      captionLeft: "Kaitlin / Operations & AI",
       captionRight: "📍 广州",
     },
     floatingMetric: { label: "公开作品", value: "4 / 4" },
@@ -57,74 +57,74 @@ window.SITE_CONTENT = {
   stats: [
     { value: "4", label: "个公开项目" },
     { value: "3", label: "段实习" },
-    { value: "TOP 10%", label: "硕士专业排名" },
+    { value: "TOP 15%", label: "硕士专业排名" },
   ],
 
   profile: {
     index: "01 / PROFILE",
     titleBefore: "关于",
     titleHighlight: "王莹 Kaitlin",
-    description: "2027 届经济学硕士，具备产品运营、服务策略与 AI 工具落地经验。关注如何把业务问题拆成清晰流程，再用数据和自动化推动解决。",
-    role: "产品运营 / 服务运营 ",
+    description: "2027 届经济学硕士，具备服务点运营、海外品类运营与 AI 工具落地经验。能从 VOC、业务指标和一线流程中定位问题，并推动跨团队协同与闭环。",
+    role: "服务运营 / 品类运营 / AI 提效",
     location: "广州",
     status: "Open to opportunities · 2027 届",
     highlights: [
-      { value: "20%", label: "AI 质检录入效率提升，并推广至团队使用" },
-      { value: "4个", label: "小小的AIcoding产品" },
-      { value: "4 / 63", label: "硕士 GPA 排名，专业前 10%" },
-      { value: "2 次", label: "校级优秀学生一等奖学金" },
+      { value: "5 名", label: "AI 返修分析插件已进入组内试用" },
+      { value: "140+", label: "国家及城市的海外供给分布分析" },
+      { value: "51.3 万", label: "关系性证言文本批量推理" },
+      { value: "6 / 44", label: "硕士排名，专业前 15%" },
     ],
     education: [
       {
         school: "暨南大学",
         degree: "经济学硕士 · 西方经济学",
         period: "2024.09 — 2027.07（预计）",
-        detail: "GPA 3.84 / 5.0 · 排名 4 / 63（前 10%）",
-        courses: ["高级计量经济学（88）", "高级宏观经济学（96）", "高级微观经济学", "行为经济学", "消费者理论"],
+        detail: "均分 89 / 100 · 排名 6 / 44（前 15%）· 校级一等奖学金",
+        courses: ["高级计量经济学（88）", "高级宏观经济学（96）"],
       },
       {
         school: "暨南大学",
         degree: "经济学学士 · 国际经济与贸易（全英）",
         period: "2020.09 — 2024.07",
-        detail: "全英授课，可独立读写英文行业报告与学术文献",
-        courses: ["金融学", "财务管理", "证券投资学", "国际金融", "货币银行学"],
+        detail: "GPA 3.87 / 5.0 · 排名 4 / 63（前 10%）· 全英授课",
+        courses: ["计量经济学（98）", "宏观经济学（95）", "货币银行学（94）"],
       },
     ],
-    certificates: ["CET-6 · 560", "基金从业资格证", "计算机二级 · Python"],
+    certificates: ["CET-6 · 560", "计算机二级 · Python"],
     experience: [
       {
         company: "影石创新 Insta360",
         role: "服务运营实习生",
-        period: "2026.07 — 2026.08",
+        period: "2026.07 — 2026.09",
         location: "深圳",
         bullets: [
           {
-            title: "履约质量监控",
-            text: "依据售后质检 SOP 每日抽检约 10 单维修工单，从服务时效、维修操作规范、图片清晰度与标签准确性等维度识别异常，协助区域服务点运营及周会数据支持。",
+            title: "服务点运营与指标监控",
+            text: "负责北京服务点日常运营支持，跟踪满意度、时效及在制工单等指标；根据 CRM 工单节点识别超时和客诉风险，协同客服、报价、检测及维修人员推进异常工单处理，并定期同步指标达成。",
           },
           {
-            title: "异常归因与闭环",
-            text: "结合维修工单、非满分评价与 UGC 反馈建立一级、二级、子标签归因，按产品型号、区域和服务点追踪高频问题；跟进服务点差评反馈与处理闭环。",
+            title: "VOC 分析与流程改善",
+            text: "结合维修工单、用户评价、客服录音及内部沟通记录分析中差评根因；识别报价必修与选修口径不清、正常设备缺少检测附件等风险，推动服务点完善报价及检测留痕规范。",
           },
           {
-            title: "流程诊断与需求推进",
-            text: "分析寄修、自助寄件及官网指引等体验问题并提出优化方向；针对某型号“按键异响”拆分类型、区域与服务点形成专项分析，推进至产品会议排期讨论。",
+            title: "AI 返修分析工具",
+            text: "针对二返与多返案例人工对比效率低的问题，基于 CRM 场景搭建浏览器插件，自动抓取前后两次检测结果、附件及维修信息，通过“业务硬规则 + AI 模型”生成标签建议与置信度并保留人工复核；已由组内 5 名同事试用。",
           },
           {
-            title: "AI 质检提效",
-            text: "使用Codex与飞书CLI搭建 AI 辅助质检工具，自动处理正常工单评分与标签填写；填写效率提升约 20%，由 3 位同事持续使用 2 周。",
+            title: "会议与跨团队协同",
+            text: "负责部分服务点周会数据准备及会议主持，汇报各服务点指标达成情况，并组织时效或满意度异常服务点说明原因、跟进问题，支持服务问题持续闭环。",
           },
         ],
       },
       {
         company: "龙腾出行",
-        role: "产品运营实习生",
+        role: "品类运营实习生",
         period: "2026.03 — 2026.06",
         location: "广州",
         bullets: [
-          "系统需求与项目推进：参与海外本地生活频道建设，覆盖需求评审、PRD 撰写、Figma 原型审查、功能验收、上线反馈及迭代跟进",
-          "流程与标准建设：梳理酒店预订、核销及异常处理等 20+ 类高频问题，完成分类归档和标准化应答 SOP；使用 Dify 搭建知识库问答 demo",
-          "跨团队协同：负责 5 家海外供应商需求与问题协调，使用英文邮件联动产品、运营及技术团队；用影刀 RPA 自动化约 1/3 重复录入流程，每周节省人工 3 小时以上"
+          "海外供给与市场分析：对接 5 家海外供应商，协调优惠、展示及上线信息；分析全球 140 余个国家及城市的资源分布，识别区域和品类覆盖空白并提出拓展优先级建议。",
+          "产品需求协同：参与海外本地生活频道需求评审、PRD 撰写、Figma 原型审查、功能验收及上线反馈，将供应商诉求转化为页面字段与展示逻辑。",
+          "AI 与流程提效：使用影刀 RPA 优化重复录入流程，覆盖约 1/3 业务流程，每周节省人工 3 小时以上；使用 Dify 搭建覆盖 20 余类预订、核销及异常问题的知识库问答 Demo。"
 
         ],
       },
@@ -362,28 +362,28 @@ window.SITE_CONTENT = {
 
   about: {
     index: "03 / SKILLS",
-    titleLine1: "AI、产品与",
-    titleHighlight: "数据工具栈",
-    description: "能够使用 AI Agent、产品设计与数据分析工具完成需求梳理、原型设计、知识库搭建、流程自动化和业务分析。",
+    titleLine1: "运营、数据与",
+    titleHighlight: "AI 工具栈",
+    description: "能做用户反馈与市场分析、供应商协同、SOP 梳理和跨团队推进，也能使用数据与 AI 工具完成流程优化、知识库搭建和业务分析。",
     linkLabel: "联系我",
     linkHref: "#contact",
     toolboxLabel: "MY TOOLBOX",
     toolboxNote: "持续学习中 ↗",
     tools: [
-      { label: "Dify / RAG", color: "blue" },
-      { label: "Python", color: "yellow" },
-      { label: "Codex", color: "orange" },
-      { label: "ClaudeCode", color: "orange" },
-      { label: "Figma", color: "white" },
-      { label: "Tableau", color: "blue" },
+      { label: "Excel", color: "green" },
+      { label: "Python / Stata", color: "yellow" },
       { label: "SQL", color: "purple" },
-      { label: "Prompt", color: "green" },
+      { label: "Tableau", color: "blue" },
+      { label: "Figma", color: "white" },
+      { label: "Dify / RAG", color: "blue" },
+      { label: "Codex / Claude", color: "orange" },
+      { label: "影刀 RPA", color: "green" },
     ],
   },
 
   contact: {
     index: "04 / LET'S TALK",
-    kicker: "HR，看到这里辛苦啦。",
+    kicker: "亲爱的HR，看到这里辛苦啦。",
     titleLine1: "可以给我",
     titleHighlight: "一个面试机会吗？",
     email: "m18302012220@163.com",
