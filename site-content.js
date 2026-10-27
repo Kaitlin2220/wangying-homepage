@@ -3,7 +3,7 @@
  * ------------------------------------------------------------
  * 修改引号中的文字即可更新网站；不要删除字段名、逗号或括号。
  * 图片路径相对于 kaitlin-portfolio 文件夹，例如：assets/avatar.jpg
- * 项目 visible 改为 false 可隐藏；调整 projects 顺序即可调整卡片顺序。
+ * 项目 visible 改为 false 可隐藏；displayOrder 控制顺序，featured 控制重点展示。
  */
 window.SITE_CONTENT = {
   meta: {
@@ -14,7 +14,7 @@ window.SITE_CONTENT = {
   },
 
   notice: {
-    visible: true,
+    visible: false,
     badge: "WORK IN PROGRESS",
   },
 
@@ -25,29 +25,33 @@ window.SITE_CONTENT = {
   },
 
   navigation: [
-    { label: "个人资料", href: "#profile" },
+    { label: "关于我", href: "#top" },
+    { label: "经历", href: "#profile" },
     { label: "作品", href: "#work" },
-    { label: "技能", href: "#about" },
-    { label: "聊一聊", href: "#contact", primary: true },
+    { label: "教育与技能", href: "#about" },
+    { label: "联系", href: "#contact", primary: true },
   ],
 
   hero: {
-    availability: "Open to opportunities · 2026",
+    availability: "2027 届 · OPEN TO OPPORTUNITIES",
     titleBefore: "看懂真实问题",
     titleHighlight: "让数据与 AI",
     titleAfter: "真正落地",
     introLine1: "嗨，我是王莹 Kaitlin。",
     introLine2: "具备服务运营、品类运营与 AI 工具落地经验，习惯从用户反馈和业务数据中定位问题、推进协同与改进。",
     primaryButton: { label: "了解我", href: "#profile" },
-    secondaryButton: { label: "GitHub", href: "https://github.com/Kaitlin2220" },
+    secondaryButton: { label: "看作品", href: "#work" },
     skills: ["服务与品类运营", "数据分析", "AI 提效实践"],
     portrait: {
       // 填入图片路径即可替换插画，例如 assets/avatar.jpg；留空则保留插画。
-      image: "assets/kaitlin-portrait.jpg",
-      imageAlt: "Kaitlin 在绿色山坡前的户外照片",
+      image: "assets/kaitlin-portrait-cutout.png",
+      fallbackImage: "assets/kaitlin-portrait.jpg",
+      imageAlt: "王莹 Kaitlin 的真人照片，身穿白蓝花纹连衣裙，微笑回望",
       placeholderLabel: "替换为你的真人照片",
       captionLeft: "Kaitlin / Operations & AI",
       captionRight: "📍 广州",
+      locationLabel: "广州 · 暨南大学",
+      sticker: "KEEP\nEXPLORING",
     },
     floatingMetric: { label: "公开作品", value: "4 / 4" },
     floatingNoteLine1: "2027届硕士，",
@@ -57,13 +61,13 @@ window.SITE_CONTENT = {
   stats: [
     { value: "4", label: "个公开项目" },
     { value: "3", label: "段实习" },
-    { value: "TOP 15%", label: "硕士专业排名" },
+    { value: "15%", label: "硕士专业前" },
   ],
 
   profile: {
-    index: "01 / PROFILE",
-    titleBefore: "关于",
-    titleHighlight: "王莹 Kaitlin",
+    index: "01 / EXPERIENCE",
+    titleBefore: "把经历，做成",
+    titleHighlight: "看得见的能力",
     description: "2027 届经济学硕士，具备服务点运营、海外品类运营与 AI 工具落地经验。能从 VOC、业务指标和一线流程中定位问题，并推动跨团队协同与闭环。",
     role: "服务运营 / 品类运营 / AI 提效",
     location: "广州",
@@ -74,6 +78,31 @@ window.SITE_CONTENT = {
       { value: "51.3 万", label: "关系性证言文本批量推理" },
       { value: "6 / 44", label: "硕士排名，专业前 15%" },
     ],
+    featuredExperience: {
+      experienceIndex: 0,
+      image: "assets/illustrations/ai-repair-human-review.png",
+      imageAlt: "小黑对照一返与二返检测记录，提供标签建议并保留人工复核",
+      headline: "让 AI 帮忙读，让判断有依据。",
+      description: "从服务点指标和用户反馈出发，把重复的返修比对做成辅助工具，业务规则与人工复核始终保留。",
+      metricValue: "5 名",
+      metricLabel: "同事试用 AI 返修分析工具",
+      tags: ["指标监控", "VOC 分析", "人工复核"],
+    },
+    supportingExperiences: [
+      { icon: "globe", title: "龙腾出行 · 品类运营", value: "140+", label: "国家及城市供给分析", description: "对接 5 家海外供应商，识别区域与品类覆盖空白。", href: "#resume-details" },
+      { icon: "document", title: "文本研究 · AI 实践", value: "51.3 万", label: "条文本批量推理", description: "从标签定义、训练集构建到多标签模型微调。", href: "#research-details" },
+    ],
+    detailsLabel: "展开完整实习经历",
+    research: {
+      title: "关系性证言与医疗众筹结果研究",
+      role: "论文第三作者 · China Economic Review",
+      period: "2026.09.30 见刊",
+      description: "基于 7,385 个众筹项目与 37.7 万条关系性证言，研究社会关系成员的证言和叙事策略如何影响筹款结果。",
+      bullets: [
+        { title: "文本分析", text: "负责文本分析模块，定义身份构建、人格评价、境况细节、同情表达等多标签内容策略；使用 DeepSeek API 与 Few-Shot Prompt 构建训练集。" },
+        { title: "模型训练", text: "微调 BERT 多标签文本分类模型，针对弱标签补充人工样本，并在验证集优化分类阈值；完成约 51.3 万条文本批量推理，生成结构化文本特征。" },
+      ],
+    },
     education: [
       {
         school: "暨南大学",
@@ -144,8 +173,8 @@ window.SITE_CONTENT = {
 
   work: {
     index: "02 / SELECTED WORK",
-    titleBefore: "从想法到",
-    titleHighlight: "可运行产品",
+    titleBefore: "想法落地，",
+    titleHighlight: "也亲手做出来",
     description: "4 个公开项目，覆盖 AI 知识管理、效率工具、企业 RAG 与学习产品。点击任一项目，查看问题、方案与真实交付。",
     filters: [
       { id: "all", label: "全部项目" },
@@ -208,15 +237,15 @@ window.SITE_CONTENT = {
 
     {
       id: "taskboard",
-      displayOrder: 4,
+      displayOrder: 2,
       visible: true,
-      featured: false,
-      wide: true,
+      featured: true,
+      wide: false,
       themeClass: "project-orange",
       filters: ["product", "ai"],
       card: {
         category: "AI 效率工具 · 2026",
-        caseNumber: "CASE 04",
+        caseNumber: "CASE 02",
         title: "my成长计划 · AI 任务看板",
         description: "面向研究生多线任务的 Windows 桌面工具，用 Claude 完成任务拆解、夜间复盘与成长反馈。",
         status: "",
@@ -230,7 +259,7 @@ window.SITE_CONTENT = {
         },
       },
       detail: {
-        kicker: "CASE 04 · AI PRODUCTIVITY TOOL · 2026",
+        kicker: "CASE 02 · AI PRODUCTIVITY TOOL · 2026",
         title: "my成长计划 · AI 任务看板",
         summary: "一个陪伴研究生处理多线任务的 Windows 桌面看板，把任务、日历、成长记录和 Claude 助手放进同一个本地工作流。",
         accent: "#ff653e",
@@ -308,7 +337,7 @@ window.SITE_CONTENT = {
 
     {
       id: "words",
-      displayOrder: 2,
+      displayOrder: 4,
       visible: true,
       featured: false,
       wide: false,
@@ -316,7 +345,7 @@ window.SITE_CONTENT = {
       filters: ["product"],
       card: {
         category: "学习产品 · 2026",
-        caseNumber: "CASE 02",
+        caseNumber: "CASE 04",
         title: "初中英语词汇学习网站",
         description: "覆盖学习、测试、游戏与进度反馈的纯前端产品，承载 46 个单元、1,332 条词汇。",
         status: "",
@@ -330,7 +359,7 @@ window.SITE_CONTENT = {
         },
       },
       detail: {
-        kicker: "CASE 02 · LEARNING PRODUCT · 2026",
+        kicker: "CASE 04 · LEARNING PRODUCT · 2026",
         title: "初中英语词汇学习网站",
         summary: "一个无需安装、打开即用的纯前端词汇学习产品，覆盖单词学习、练习测试、游戏和学习进度。",
         accent: "#2864ed",
@@ -361,9 +390,9 @@ window.SITE_CONTENT = {
   ],
 
   about: {
-    index: "03 / SKILLS",
-    titleLine1: "运营、数据与",
-    titleHighlight: "AI 工具栈",
+    index: "03 / EDUCATION & TOOLS",
+    titleLine1: "学习是底色，",
+    titleHighlight: "工具让想法往前走",
     description: "能做用户反馈与市场分析、供应商协同、SOP 梳理和跨团队推进，也能使用数据与 AI 工具完成流程优化、知识库搭建和业务分析。",
     linkLabel: "联系我",
     linkHref: "#contact",

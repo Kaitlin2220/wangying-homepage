@@ -1,6 +1,8 @@
 # Kaitlin Portfolio
 
-面向产品运营、AI 产品与策略运营岗位的静态个人网站。首页优先展示个人资料、教育背景和实习经历，随后呈现 4 个公开项目与技能工具栈。
+面向服务运营、品类运营与数据分析岗位的静态个人网站。采用真人分层首屏、图解经历、两张重点作品卡及可展开的完整履历。
+
+2026-10-28 视觉更新：实现已审核 Demo 的米白、蓝、黄配色与紧凑布局；接入小黑返修分析配图；小绿书与 AI 任务看板并列重点展示。本版人物交互为轻微分层视差，尚未接入真实转头视频；移动端及减少动态效果模式保留静态展示。
 
 ## 已整合项目
 
@@ -26,7 +28,9 @@ python -m http.server 8080
 - 所有文案、个人信息、统计数字、项目详情与外链：编辑 `site-content.js`
 - 完整字段解释与修改示例：查看 `CONTENT_FIELDS.md`
 - 主色、字体与布局：编辑 `styles.css`
-- 真人照片：替换 `assets/kaitlin-portrait.jpg`，或修改 `hero.portrait.image`
+- 真人照片：`assets/kaitlin-portrait-cutout.png` 是透明人物图；修改 `hero.portrait.image` 可替换，原照片保留为 `hero.portrait.fallbackImage`
+- 影石经历配图：`assets/illustrations/ai-repair-human-review.png`
+- 全部实习经历、研究内容、本硕教育、课程与证书均保留，可通过对应展开入口查看
 
 ## 在线地址
 
